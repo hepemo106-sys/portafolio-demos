@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>[Nombre Restaurante] · Sabor auténtico</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  html { scroll-behavior:smooth; }
+  body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; }
+</style>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900">
+  <header class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#inicio" class="font-extrabold text-xl">[Restaurante]</a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#menu" class="hover:text-red-600">Menú</a>
+        <a href="#nosotros" class="hover:text-red-600">Nosotros</a>
+        <a href="#ubicacion" class="hover:text-red-600">Ubicación</a>
+      </nav>
+      <a href="https://wa.me/34XXXXXXXXX" target="_blank" class="inline-flex items-center rounded-xl px-4 py-2 bg-red-600 text-white font-semibold shadow hover:shadow-md">Reservar por WhatsApp</a>
+    </div>
+  </header>
+
+  <section id="inicio" class="pt-28">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Descubre el sabor auténtico en <span class="text-red-600">[Nombre Restaurante]</span></h1>
+        <p class="mt-4 text-lg text-gray-600">Ingredientes frescos, cocina local y una experiencia para repetir. Reserva tu mesa en un clic.</p>
+        <div class="mt-6 flex gap-3">
+          <a href="https://wa.me/34XXXXXXXXX" target="_blank" class="px-5 py-3 rounded-xl bg-red-600 text-white font-semibold">Reservar ahora</a>
+          <a href="#menu" class="px-5 py-3 rounded-xl border font-semibold">Ver menú</a>
+        </div>
+      </div>
+      <div class="rounded-2xl overflow-hidden shadow-lg">
+        <img alt="Platos del restaurante" src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1600&auto=format&fit=crop" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-extrabold">Menú destacado</h2>
+      <p class="text-gray-600 mt-2">Una selección de nuestros favoritos.</p>
+      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-5 bg-white rounded-2xl shadow">
+          <img src="https://images.unsplash.com/photo-1544025162-7053dfd7c6b5?q=80&w=1200&auto=format&fit=crop" class="rounded-xl h-40 w-full object-cover" alt="Pizza artesanal">
+          <h3 class="mt-4 font-bold">🍕 Pizza artesanal</h3>
+          <p class="text-gray-600 text-sm">Masa madre, salsa de la casa y queso fundido.</p>
+        </div>
+        <div class="p-5 bg-white rounded-2xl shadow">
+          <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1200&auto=format&fit=crop" class="rounded-xl h-40 w-full object-cover" alt="Hamburguesa gourmet">
+          <h3 class="mt-4 font-bold">🍔 Hamburguesa gourmet</h3>
+          <p class="text-gray-600 text-sm">Carne de primera, pan brioche y salsa especial.</p>
+        </div>
+        <div class="p-5 bg-white rounded-2xl shadow">
+          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1200&auto=format&fit=crop" class="rounded-xl h-40 w-full object-cover" alt="Ensalada fresca">
+          <h3 class="mt-4 font-bold">🥗 Ensalada fresca</h3>
+          <p class="text-gray-600 text-sm">Verdes crujientes, aderezo cítrico y semillas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros" class="py-16">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+      <div class="rounded-2xl overflow-hidden shadow-lg">
+        <img alt="Interior del restaurante" src="https://images.unsplash.com/photo-1526318472351-c75fcf070305?q=80&w=1600&auto=format&fit=crop" class="w-full h-full object-cover">
+      </div>
+      <div>
+        <h2 class="text-3xl font-extrabold">Cocina honesta, ambiente acogedor</h2>
+        <p class="mt-3 text-gray-600">Somos un equipo apasionado por la gastronomía. Productos de temporada, proveedores locales y recetas que cuentan historias.</p>
+        <ul class="mt-4 space-y-2 text-gray-700">
+          <li>✔️ Opciones veganas y sin gluten</li>
+          <li>✔️ Menú del día</li>
+          <li>✔️ Servicio a domicilio</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="ubicacion" class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-extrabold">Dónde estamos</h2>
+      <p class="text-gray-600 mt-2">[Dirección del restaurante]</p>
+      <div class="mt-6 rounded-2xl overflow-hidden shadow">
+        <iframe title="Mapa" src="https://maps.google.com/maps?q=Barcelona&t=&z=13&ie=UTF8&iwloc=&output=embed" class="w-full h-[350px]"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-8 border-t">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-gray-600">© {year} [Nombre Restaurante]. Todos los derechos reservados.</p>
+      <a href="https://wa.me/34XXXXXXXXX" target="_blank" class="px-4 py-2 rounded-xl bg-red-600 text-white font-semibold">Reservar por WhatsApp</a>
+    </div>
+  </footer>
+  <script>
+    document.body.innerHTML = document.body.innerHTML.replace(/{year}/g, new Date().getFullYear());
+  </script>
+</body>
+</html>
